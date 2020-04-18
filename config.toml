@@ -1,0 +1,4 @@
+baseURL = "https://nacdlow.com"
+languageCode = "en-uk"
+title = "Nacdlow builds the smart home system of the future."
+theme = "nacdlow"

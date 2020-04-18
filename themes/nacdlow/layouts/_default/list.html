@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+{{if not .IsHome}}<h2>{{.Title}}</h2>{{end}}
+{{.Content}}
+{{ range .Data.Pages }}
+{{if eq .Dir "/"}}
+<div class="entry">
+	<a href="{{.URL}}">{{.Title}}</a>
+	<div class="meta">
+		<p><a href="{{.URL}}">{{.Params.Description}}</a></p>
+	</div>
+</div>
+{{end}}
+{{end}}
+{{ partial "footer.html" . }}
