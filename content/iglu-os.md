@@ -21,6 +21,10 @@ Our distribution includes the following changes:
 - Support for using Raspberry Pi's Ethernet adapter (appears as Ethernet gadget
   device over USB, static ip set to `10.0.0.2`).
 - Support for eduroam with pre-filled credentials.
-- Installs iglü server and adds it as a service.
-- Installs and runs our e-ink display program as a service.
+- Installs [iglü server](/iglu) and adds it as a service.
+- Installs and runs our [e-ink display program](/e-ink/) as a service.
 - Enables SPI for e-ink display support.
+
+We ran this distribution on a Raspberry Pi Zero W, which contains a Waveshare
+e-ink display and a real-time click (RTC). We placed this in a 3D-printed case
+printed on a Prusa 3D printer at the Edinburgh Hacklab.

@@ -5,4 +5,5 @@ repository: lifx-integration-plugin
 weight: 140
 ---
 
-More details...
+This is an iglü plugin which integrates the LIFX Wi-Fi enabled LED bulbs to
+hook into iglü, displaying all the available lights registered on the account.

@@ -10,4 +10,4 @@ address. This allows testing PWAs.
 
 This uses Miek Gieben's DNS library for both resolving and serving.
 ### Screenshot
-<img src="/devdns.jpg"/>
+![A screenshot of the development DNS server running](/devdns.jpg)

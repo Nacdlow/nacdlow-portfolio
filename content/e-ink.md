@@ -10,3 +10,7 @@ weight: 90
 This is a program written in Python which pulls in data from the smart home
 system and displays it on the e-ink display. We used FontAwesome icons and
 converted them to bitmaps to support the display.
+
+This program uses our [Waveshare Driver Patch](/waveshare-driver-patch/) so the
+display is flipped upside-down, due to the space constriction in the 3D printed
+case.

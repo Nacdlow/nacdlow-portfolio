@@ -5,4 +5,6 @@ repository: minecraft-simulation-iglu-plugin
 weight: 130
 ---
 
-More details...
+This is an iglü plugin, which is built entirely using our [Plugin
+SDK](/plugin-sdk/), to allow our [Minecraft plugin](/minecraft-spigot-plugin/)
+to display in-game lights and devices in the "search devices" list.
