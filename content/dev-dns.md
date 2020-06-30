@@ -5,4 +5,9 @@ repository: dev-dns
 weight: 40
 ---
 
-More details...
+This is a DNS which resolves local.nacdlow.com to your local computer's IP
+address. This allows testing PWAs.
+
+This uses Miek Gieben's DNS library for both resolving and serving.
+### Screenshot
+<img src="/devdns.jpg"/>

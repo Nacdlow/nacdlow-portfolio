@@ -5,4 +5,11 @@ repository: payment-gateway
 weight: 80
 ---
 
-More details...
+This is our Stripe testing payment gateway, which is built for our static
+Marketplace website. This is deployed on [Heroku] and uses Stripe's Go library.
+
+[Heroku]: https://heroku.com
+
+### Screenshot
+
+<img src="/payment.jpg" width="600"/>
