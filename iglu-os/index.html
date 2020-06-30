@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/normalize-8.0.1.min.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+      <title>iglüOS - Nacdlow</title>
+		
+		<meta name="description" content="Our custom Linux distribution (based on Raspbian Buster Lite) built for our Raspberry Pi Zero W, which enables Ethernet Driver, SPI for e-ink display, and our custom services." />
+        <link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="nav">
+				<div class="nav-left">
+					<a href="/" class="nav-title"><img src="/img/nacdlow-icon.png"
+						class="logo" />
+					<span class="nav-extra">Nacdlow</span></a>
+					<a href="/media">Media</a>
+				</div>
+				<div class="nav-right">
+					<a href="https://demo.nacdlow.com" target="_blank">Demo</a>
+					<a href="https://github.com/Nacdlow" target="_blank">GitHub</a>
+				</div>
+			</div>
+			<div class="content">
+
+
+<h2>iglüOS</h2>
+<p><img src="/igluOS.jpeg" width="500" /></p>
+<p>iglüOS is our custom Raspbian Lite-based distribution built for Nacdlow&rsquo;s iglü.
+It allows you to have an OS image for the Raspberry Pi with iglü installed as a
+service, which boots on startup.</p>
+<p>It also allows you to also set up WiFi configuration (eduroam, in this case)
+for expo purposes.</p>
+<p>Our distribution includes the following changes:</p>
+<ul>
+<li>Support for Real-time Clock (specifically, PCF8523), and removes the
+<code>fake-hwclock</code>.</li>
+<li>Support for using Raspberry Pi&rsquo;s Ethernet adapter (appears as Ethernet gadget
+device over USB, static ip set to <code>10.0.0.2</code>).</li>
+<li>Support for eduroam with pre-filled credentials.</li>
+<li>Installs <a href="/iglu">iglü server</a> and adds it as a service.</li>
+<li>Installs and runs our <a href="/e-ink/">e-ink display program</a> as a service.</li>
+<li>Enables SPI for e-ink display support.</li>
+</ul>
+<p>We ran this distribution on a Raspberry Pi Zero W, which contains a Waveshare
+e-ink display and a real-time click (RTC). We placed this in a 3D-printed case
+printed on a Prusa 3D printer at the Edinburgh Hacklab.</p>
+
+		</div>
+		<div class="footer">
+			<p>Copyright &copy; 2019-2020 Nacdlow.</p>
+		</div>
+	</body>
+</html>
+

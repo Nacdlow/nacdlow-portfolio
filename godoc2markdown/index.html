@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/normalize-8.0.1.min.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+      <title>godoc2markdown - Nacdlow</title>
+		
+		<meta name="description" content="A tool which converts go doc to Markdown. We needed this tool to generate documentation of private repositories, which wasn&#39;t possible - so we built a solution." />
+        <link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="nav">
+				<div class="nav-left">
+					<a href="/" class="nav-title"><img src="/img/nacdlow-icon.png"
+						class="logo" />
+					<span class="nav-extra">Nacdlow</span></a>
+					<a href="/media">Media</a>
+				</div>
+				<div class="nav-right">
+					<a href="https://demo.nacdlow.com" target="_blank">Demo</a>
+					<a href="https://github.com/Nacdlow" target="_blank">GitHub</a>
+				</div>
+			</div>
+			<div class="content">
+
+
+<h2>godoc2markdown</h2>
+<p>This is a simple Unix-like tool which allows you to pipe the output of go doc
+to generate Markdown.</p>
+<p>The purpose of this tool is to allow private Go projects generate Markdown
+documentation, where websites like <a href="https://godoc.org">GoDoc</a> has no access to the repository.</p>
+<p>After implementing this, we have created a script to generate our Wiki for the
+iglü server repository automatically, including a table-of-contents.</p>
+<h3 id="screenshots">Screenshots</h3>
+<img src="/godoc.jpg" width="500"/>
+<img src="/godoc2.jpg" width="500"/>
+<h3 id="usage-example">Usage example</h3>
+<p>If you want to generate a Markdown of the package in the current directory, and
+save it to a file, you can run:</p>
+<pre><code>$ go doc -all . | godoc2markdown &gt; DOCUMENTATION.md
+</code></pre>
+		</div>
+		<div class="footer">
+			<p>Copyright &copy; 2019-2020 Nacdlow.</p>
+		</div>
+	</body>
+</html>
+

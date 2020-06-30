@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/normalize-8.0.1.min.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+      <title>iglü server - Nacdlow</title>
+		
+		<meta name="description" content="The core smart home system (both front-end and back-end) code." />
+        <link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="nav">
+				<div class="nav-left">
+					<a href="/" class="nav-title"><img src="/img/nacdlow-icon.png"
+						class="logo" />
+					<span class="nav-extra">Nacdlow</span></a>
+					<a href="/media">Media</a>
+				</div>
+				<div class="nav-right">
+					<a href="https://demo.nacdlow.com" target="_blank">Demo</a>
+					<a href="https://github.com/Nacdlow" target="_blank">GitHub</a>
+				</div>
+			</div>
+			<div class="content">
+
+
+<h2>iglü server</h2>
+<h3 id="summary">Summary</h3>
+<p>This is the iglü server project, which contains most of the work we have done.
+It it a self-contained project, which includes:</p>
+<ul>
+<li>Web server</li>
+<li>Web app files and logic</li>
+<li>Database (SQLite, or can connect to external databases)</li>
+<li>Plugin API</li>
+</ul>
+<p><a href="https://demo.nacdlow.com">Visit demo website</a></p>
+<h3 id="description">Description</h3>
+<p>iglü server is the web server and control system for the smart home. Its
+purpose is to control home appliances and Internet-connected devices. It is
+self-contained, handling access-control among other things, and should work
+without Internet connection.</p>
+<h3 id="configuration">Configuration</h3>
+<p>A configuration file is automatically generated when run, Dark Sky API is
+required for weather information, but is not required to run the app.</p>
+<h3 id="technical-stack">Technical Stack</h3>
+<p>The server is written in <a href="https://golang.org">Go</a>, and uses the <a href="https://go-macaron.com">macaron</a> web framework and <a href="https://xorm.io">XORM</a>
+for the object-relational mapping library. We have built a custom plugin API
+which runs over Remote Procedure Calls (RPC) using HashiCorp&rsquo;s <a href="https://github.com/hashicorp/go-plugin">go-plugin</a>
+library.</p>
+<p>For the front-end, iglü uses <a href="https://mdbootstrap.com">MDBootstrap</a> for the basic design, which we have
+built upon. And to provide more interactivity and better user experience
+quickly, we have used <a href="https://jquery.com">jQuery</a>. Other libraries are used such as <a href="https://github.com/hashicorp/go-plugin">Chart.js</a>,
+<a href="https://fontawesome.com/">FontAwesome</a>, and <a href="https://darkskyapp.github.io/skycons/">Skycons</a> (from Darksky) to add dynamic graphical elements
+on the page.</p>
+<p>These are some libraries and frameworks we have used to speed up development
+so we could focus on the product.</p>
+<h4 id="building-and-running">Building and Running</h4>
+<p>To build and run iglü, you require the following packages:</p>
+<ul>
+<li>git</li>
+<li>Go (1.12+)</li>
+<li>GNU Make</li>
+<li>go-bindata</li>
+</ul>
+<p>Then clone the project, build, and run it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git clone https://github.com/Nacdlow/iglu-server
+$ cd iglu-server
+$ make
+$ ./nacdlow-server run <span style="color:#f92672">[</span>--port 443<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--dev<span style="color:#f92672">]</span>
+</code></pre></div><p>No database set-up is required, all required tables will be created
+automatically on an SQLite database file.</p>
+
+		</div>
+		<div class="footer">
+			<p>Copyright &copy; 2019-2020 Nacdlow.</p>
+		</div>
+	</body>
+</html>
+

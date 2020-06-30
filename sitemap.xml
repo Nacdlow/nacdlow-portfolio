@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://nacdlow.com/iglu/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/iglu-os/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/godoc2markdown/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/dev-dns/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/plugin-sdk/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/plugin-packager/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/marketplace/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/payment-gateway/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/e-ink/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/waveshare-driver-patch/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/minecraft-spigot-plugin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/minecraft-iglu-plugin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/lifx-plugin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/light-mode-plugin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nacdlow.com/tags/</loc>
+  </url>
+  
+</urlset>

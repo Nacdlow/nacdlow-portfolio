@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/normalize-8.0.1.min.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+      <title>Plugin Packager - Nacdlow</title>
+		
+		<meta name="description" content="Our internal plugin packager GUI application, which allows us to generate manifests, checksums and archives plugins before pushing them to our custom plugins repository." />
+        <link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="nav">
+				<div class="nav-left">
+					<a href="/" class="nav-title"><img src="/img/nacdlow-icon.png"
+						class="logo" />
+					<span class="nav-extra">Nacdlow</span></a>
+					<a href="/media">Media</a>
+				</div>
+				<div class="nav-right">
+					<a href="https://demo.nacdlow.com" target="_blank">Demo</a>
+					<a href="https://github.com/Nacdlow" target="_blank">GitHub</a>
+				</div>
+			</div>
+			<div class="content">
+
+
+<h2>Plugin Packager</h2>
+<p>This is our internal plugin package program, which allows us to:</p>
+<ul>
+<li>Generate/check manifests</li>
+<li>Cross-compile to multiple platforms</li>
+<li>Strip binaries</li>
+<li>Calculate checksums</li>
+<li>Archive the binary (using <code>xz</code>)</li>
+</ul>
+<p>It then places it in the marketplace repository, and stores them in categories
+depending on the platform (just like Debian&rsquo;s APT).</p>
+<h3 id="screenshot">Screenshot</h3>
+<p><img src="/plugin-packager.jpg" alt="Screenshot of the plugin packager" /></p>
+
+		</div>
+		<div class="footer">
+			<p>Copyright &copy; 2019-2020 Nacdlow.</p>
+		</div>
+	</body>
+</html>
+

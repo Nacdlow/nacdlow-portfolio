@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/normalize-8.0.1.min.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+      <title>Plugin SDK - Nacdlow</title>
+		
+		<meta name="description" content="Our SDK for developing plugins for iglü server, which are loading and communicated over RPC." />
+        <link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="nav">
+				<div class="nav-left">
+					<a href="/" class="nav-title"><img src="/img/nacdlow-icon.png"
+						class="logo" />
+					<span class="nav-extra">Nacdlow</span></a>
+					<a href="/media">Media</a>
+				</div>
+				<div class="nav-right">
+					<a href="https://demo.nacdlow.com" target="_blank">Demo</a>
+					<a href="https://github.com/Nacdlow" target="_blank">GitHub</a>
+				</div>
+			</div>
+			<div class="content">
+
+
+<h2>Plugin SDK</h2>
+<p>This is our Software Development Kit for developing iglü server plugins in Go.
+It is based on HashiCorp&rsquo;s <a href="https://github.com/hashicorp/go-plugin">go-plugin</a> library, which they use in their products.</p>
+<p>Plugins communicate with the iglü server via Remote Procedure Calls (RPC), this
+makes it so that if a plugin crashes, the server will continue running and
+allows us to restart the plugin. Also it allows us to create plugins in
+different languages if required in the future.</p>
+<p>This SDK provides a Go interface which can be implemented so the server may
+load the binary.</p>
+<h3 id="screenshot">Screenshot</h3>
+<img src="/plugin-sdk.jpg"/>
+
+		</div>
+		<div class="footer">
+			<p>Copyright &copy; 2019-2020 Nacdlow.</p>
+		</div>
+	</body>
+</html>
+

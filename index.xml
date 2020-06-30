@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nacdlow builds the smart home system of the future.</title>
+    <link>https://nacdlow.com/</link>
+    <description>Recent content on Nacdlow builds the smart home system of the future.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    
+	<atom:link href="https://nacdlow.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iglü server</title>
+      <link>https://nacdlow.com/iglu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/iglu/</guid>
+      <description>Summary This is the iglü server project, which contains most of the work we have done. It it a self-contained project, which includes:
+ Web server Web app files and logic Database (SQLite, or can connect to external databases) Plugin API  Visit demo website
+Description iglü server is the web server and control system for the smart home. Its purpose is to control home appliances and Internet-connected devices. It is self-contained, handling access-control among other things, and should work without Internet connection.</description>
+    </item>
+    
+    <item>
+      <title>iglüOS</title>
+      <link>https://nacdlow.com/iglu-os/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/iglu-os/</guid>
+      <description>iglüOS is our custom Raspbian Lite-based distribution built for Nacdlow&amp;rsquo;s iglü. It allows you to have an OS image for the Raspberry Pi with iglü installed as a service, which boots on startup.
+It also allows you to also set up WiFi configuration (eduroam, in this case) for expo purposes.
+Our distribution includes the following changes:
+ Support for Real-time Clock (specifically, PCF8523), and removes the fake-hwclock. Support for using Raspberry Pi&amp;rsquo;s Ethernet adapter (appears as Ethernet gadget device over USB, static ip set to 10.</description>
+    </item>
+    
+    <item>
+      <title>godoc2markdown</title>
+      <link>https://nacdlow.com/godoc2markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/godoc2markdown/</guid>
+      <description>This is a simple Unix-like tool which allows you to pipe the output of go doc to generate Markdown.
+The purpose of this tool is to allow private Go projects generate Markdown documentation, where websites like GoDoc has no access to the repository.
+After implementing this, we have created a script to generate our Wiki for the iglü server repository automatically, including a table-of-contents.
+Screenshots Usage example If you want to generate a Markdown of the package in the current directory, and save it to a file, you can run:</description>
+    </item>
+    
+    <item>
+      <title>Dev DNS</title>
+      <link>https://nacdlow.com/dev-dns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/dev-dns/</guid>
+      <description>This is a DNS which resolves local.nacdlow.com to your local computer&amp;rsquo;s IP address. This allows testing PWAs.
+This uses Miek Gieben&amp;rsquo;s DNS library for both resolving and serving.
+Screenshot </description>
+    </item>
+    
+    <item>
+      <title>Plugin SDK</title>
+      <link>https://nacdlow.com/plugin-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/plugin-sdk/</guid>
+      <description>This is our Software Development Kit for developing iglü server plugins in Go. It is based on HashiCorp&amp;rsquo;s go-plugin library, which they use in their products.
+Plugins communicate with the iglü server via Remote Procedure Calls (RPC), this makes it so that if a plugin crashes, the server will continue running and allows us to restart the plugin. Also it allows us to create plugins in different languages if required in the future.</description>
+    </item>
+    
+    <item>
+      <title>Plugin Packager</title>
+      <link>https://nacdlow.com/plugin-packager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/plugin-packager/</guid>
+      <description>This is our internal plugin package program, which allows us to:
+ Generate/check manifests Cross-compile to multiple platforms Strip binaries Calculate checksums Archive the binary (using xz)  It then places it in the marketplace repository, and stores them in categories depending on the platform (just like Debian&amp;rsquo;s APT).
+Screenshot </description>
+    </item>
+    
+    <item>
+      <title>Marketplace</title>
+      <link>https://nacdlow.com/marketplace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/marketplace/</guid>
+      <description>This is iglü marketplace website and plugin repository. It contains the descriptions of all plugins, and their compiled binaries.
+More details about packaging is available in the Plugin Packager page.
+The site is built with Hugo, and is statically generated (just like this current website).
+Visit the marketplace: https://market.nacdlow.com</description>
+    </item>
+    
+    <item>
+      <title>Payment Gateway</title>
+      <link>https://nacdlow.com/payment-gateway/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/payment-gateway/</guid>
+      <description>This is our Stripe testing payment gateway, which is built for our static Marketplace website. This is deployed on Heroku and uses Stripe&amp;rsquo;s Go library.
+Screenshot </description>
+    </item>
+    
+    <item>
+      <title>E-Ink Display</title>
+      <link>https://nacdlow.com/e-ink/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/e-ink/</guid>
+      <description>This is a program written in Python which pulls in data from the smart home system and displays it on the e-ink display. We used FontAwesome icons and converted them to bitmaps to support the display.
+This program uses our Waveshare Driver Patch so the display is flipped upside-down, due to the space constriction in the 3D printed case.</description>
+    </item>
+    
+    <item>
+      <title>Waveshare Driver Patch</title>
+      <link>https://nacdlow.com/waveshare-driver-patch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/waveshare-driver-patch/</guid>
+      <description>This is a patch for the Python Waveshare epd2in13_V2.py driver, which flips the output upside-down.
+This is because of the limitations of our 3D printed build, and where the USB power port is located on the Raspberry Pi Zero W.
+Instructions on using this patch is available in the project&amp;rsquo;s repository page.</description>
+    </item>
+    
+    <item>
+      <title>Minecraft Simulation Spigot Plugin</title>
+      <link>https://nacdlow.com/minecraft-spigot-plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/minecraft-spigot-plugin/</guid>
+      <description>This is a Bukkit/Spigot Minecraft server plugin, which allows us to sync aspects of the simulated iglü environment in a Minecraft game world. We did this instead of building our own custom simulation environment, whether that be a simple interface or a custom simulation game.
+This allowed us to save a lot of time in simulating, as Minecraft is a game which is easy to extend.</description>
+    </item>
+    
+    <item>
+      <title>Minecraft Simulation iglü Plugin</title>
+      <link>https://nacdlow.com/minecraft-iglu-plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/minecraft-iglu-plugin/</guid>
+      <description>This is an iglü plugin, which is built entirely using our Plugin SDK, to allow our Minecraft plugin to display in-game lights and devices in the &amp;ldquo;search devices&amp;rdquo; list.</description>
+    </item>
+    
+    <item>
+      <title>LIFX iglü Plugin</title>
+      <link>https://nacdlow.com/lifx-plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/lifx-plugin/</guid>
+      <description>This is an iglü plugin which integrates the LIFX Wi-Fi enabled LED bulbs to hook into iglü, displaying all the available lights registered on the account.</description>
+    </item>
+    
+    <item>
+      <title>Light Mode iglü Plugin</title>
+      <link>https://nacdlow.com/light-mode-plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nacdlow.com/light-mode-plugin/</guid>
+      <description>This is an iglü plugin which customises the look-and-feel of iglü using web extensions, adding a light theme to the iglü interface.</description>
+    </item>
+    
+  </channel>
+</rss>
