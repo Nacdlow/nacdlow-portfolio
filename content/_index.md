@@ -24,7 +24,7 @@ We consist of the following members:
 - [Humaid AlQassimi](https://humaidq.ae): Leader & Technical Manager
 - [Alakbar Zeynalzade](https://alak.bar):
   Reporter & Organisational Manager
-- [Amaanullah Akram](https://www.amaanakram.tech/): Organisational &
+- [Amaan Akram](https://www.amaanakram.tech/): Organisational &
   Technical Manager
 - [Mark Bird](https://www.linkedin.com/in/mark-bird-/): Liaison
 - Numan Ali: Technical Manager
