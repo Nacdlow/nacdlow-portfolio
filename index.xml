@@ -5,11 +5,7 @@
     <link>https://nacdlow.com/</link>
     <description>Recent content on Nacdlow builds the smart home system of the future.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-uk</language>
-    
-	<atom:link href="https://nacdlow.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-uk</language><atom:link href="https://nacdlow.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iglü server</title>
       <link>https://nacdlow.com/iglu/</link>
